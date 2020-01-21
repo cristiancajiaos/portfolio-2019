@@ -27,17 +27,17 @@ aside {
 
         nav {
             a {
-                color: darken($base-color, 20%);
+                color: darken($base-color, 10%);
                 display: block;
                 font-size: 1.75rem;
                 text-transform: uppercase;
                 text-decoration: none !important;
                 margin-bottom: 0;
-                transition: color 0.1s linear;
+                transition: font-weight 0.1s linear, color 0.1s linear;
 
                 &.active {
-                    color: darken($base-color, 60%);
-                    font-weight: 1000;
+                    color: darken($base-color, 80%);
+                    font-weight: bold;
                 }
 
                 &:hover {
