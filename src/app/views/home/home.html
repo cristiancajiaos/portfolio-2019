@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<section class="home">
+    <div ng-show="vm.loadingSlides">
+        <i class="fas fa-spinner fa-spin fa-fw"></i> Cargando carrusel...
+    </div>
+    <div ng-show="!vm.loadingSlides">
+        <div uib-carousel active="vm.active" interval="vm.myInterval" no-wrap="vm.noWrapSlides" class="mb-1">
+            <div uib-slide ng-repeat="slide in vm.slides track by $index" index="$index">
+                <img ng-src="{{slide.imageUrl}}" class="img-fluid">
+            </div>
+        </div>
+    </div>
+</section>

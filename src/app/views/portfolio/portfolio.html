@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<section class="portfolio">
+    <div ng-show="vm.loadingPortfolio">
+        <i class="fas fa-spinner fa-spin fa-fw"></i> Cargando portafolio...
+    </div>
+    <div ng-show="!vm.loadingPortfolio">
+
+        <form novalidate>
+            <div class="form-group row">
+                <label for="name" class="col-md-3 col-sm-12 col-form-label">
+                    Filtrar por nombre
+                </label>
+                <div class="col-md-9 col-sm-12">
+                    <input class="form-control" id="name" name="name" ng-model="vm.nameSearch"/>
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="order" class="col-md-3 col-sm-12 col-form-label">
+                    Ordenar por
+                </label>
+                <div class="col-md-9 col-sm-12">
+                    <select class="form-control" id="order" name="order"
+                        ng-options="orderOption.value as orderOption.name for orderOption in vm.orderOptions"
+                        ng-model="vm.order">
+                    </select>
+                </div>
+            </div>
+        </form>
+
+        <hr/>
+
+        <section class="portfolio-elements">
+            <div class="portfolio-element" ng-repeat="portfolioElement in vm.portfolio | filter:vm.nameSearch | orderBy:vm.order"
+                ng-style="{'background-size':'contain',background:'url(' + portfolioElement.imageUrl + ')'}">
+                <div class="footer">
+                    <div class="description">
+                        <h2>
+                            {{portfolioElement.title}}
+                            <small>
+                                ({{portfolioElement.dateYear}})
+                                <i ng-class="{'fab':true}" ng-repeat="tool in portfolioElement.tools"
+                                    class="{{tool.icon}} fa-fw" title="Aquí se usó {{tool.name}}"></i>
+                            </small>
+                        </h2>
+                        <p>{{portfolioElement.description}}</p>
+                    </div>
+                    <div class="controls">
+                        Controles
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+</section>

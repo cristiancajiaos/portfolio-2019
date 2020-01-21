@@ -1,0 +1,15 @@
+
+[
+    {
+        "uiSref":"home",
+        "content":"Home"
+    },
+    {
+        "uiSref":"about",
+        "content":"Acerca de"
+    },
+    {
+        "uiSref":"portfolio",
+        "content":"Portafolio"
+    }
+]
