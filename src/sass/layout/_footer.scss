@@ -1,0 +1,26 @@
+footer {
+    padding: 1rem;
+
+    & > *:not(:last-child) {
+        margin-bottom: 0.5rem;
+    }
+
+    @media screen and (max-width: 767px) {
+        text-align: center;
+
+        .social-networks {
+            a {
+                color: darken($base-color, 20%);
+                transition: color 0.1s linear;
+
+                &:hover {
+                    color: lighten($base-color, 50%);
+                }
+            }
+        }
+    }
+
+    @media screen and (min-width: 768px) {
+        display: none;
+    }
+}

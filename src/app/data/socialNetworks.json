@@ -1,0 +1,19 @@
+[
+    {
+        "name":"Twitter",
+        "url":"http://www.twitter.com",
+        "icon":"fa-twitter"
+    }, {
+        "name":"LinkedIn",
+        "url":"http://www.linkedin.com",
+        "icon":"fa-linkedin"
+    }, {
+        "name": "Codepen",
+        "url":"http://www.codepen.com",
+        "icon":"fa-codepen"
+    }, {
+        "name":"GitHub",
+        "url":"http://www.github.com",
+        "icon":"fa-github"
+    }
+]

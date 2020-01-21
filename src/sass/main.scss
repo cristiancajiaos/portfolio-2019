@@ -1,5 +1,22 @@
-@import 'helpers';
+/* Abstract */
+@import 'abstracts/_variables';
 
-h1 {
-    color: $red;
-}
+/* Base */
+@import 'base/_base';
+
+/* Components */
+
+/* Layout */
+@import 'layout/_header';
+@import 'layout/_aside';
+@import 'layout/_main';
+@import 'layout/_footer';
+
+/* Pages */
+@import 'views/_about';
+@import 'views/_home';
+@import 'views/_portfolio';
+
+/* Themes */
+
+/* Vendors */

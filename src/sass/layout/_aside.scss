@@ -1,0 +1,60 @@
+aside {
+    padding: 1rem;
+
+    & > *:not(:last-child) {
+        margin-bottom: 1rem;
+    }
+
+    @media screen and (max-width: 767px) {
+        display: none;
+    }
+
+    @media screen and (min-width: 768px) {
+        position: fixed;
+        width: 30vw;
+        height: 100vh;
+
+        text-align: right;
+
+        .profile-image {
+            img {
+                width: 200px;
+                height: 200px;
+                border: 1px solid black;
+                box-shadow: 3px 3px 5px black;
+            }
+        }
+
+        nav {
+            a {
+                color: darken($base-color, 20%);
+                display: block;
+                font-size: 1.75rem;
+                text-transform: uppercase;
+                text-decoration: none !important;
+                margin-bottom: 0;
+                transition: color 0.1s linear;
+
+                &.active {
+                    color: darken($base-color, 60%);
+                    font-weight: 1000;
+                }
+
+                &:hover {
+                    color: lighten($base-color, 50%);
+                }
+            }
+        }
+
+        .social-networks {
+            a {
+                color: darken($base-color, 20%);
+                transition: color 0.1s linear;
+
+                &:hover {
+                    color: lighten($base-color, 50%);
+                }
+            }
+        }
+    }
+}

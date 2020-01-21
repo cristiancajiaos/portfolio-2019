@@ -4,14 +4,28 @@
   "description": "Portfolio",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start":"grunt serve"
   },
   "keywords": [],
   "author": "cristiancajiaos",
   "license": "ISC",
-  "dependencies": {},
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.12.0",
+    "@popperjs/core": "^2.0.0-rc.3",
+    "@uirouter/angularjs": "^1.0.24",
+    "angular": "^1.7.9",
+    "angular-animate": "^1.7.9",
+    "angular-touch": "^1.7.9",
+    "bootstrap": "^4.4.1",
+    "jquery": "^3.4.1",
+    "popper.js": "^1.16.0",
+    "ui-bootstrap4": "^3.0.6"
+  },
   "devDependencies": {
     "grunt": "^1.0.4",
+    "grunt-angular-templates": "^1.2.0",
+    "grunt-contrib-copy": "^1.0.0",
     "grunt-contrib-csslint": "^2.0.0",
     "grunt-contrib-cssmin": "^3.0.0",
     "grunt-contrib-htmlmin": "^3.1.0",
@@ -23,7 +37,9 @@
     "grunt-htmlhint": "^0.9.13",
     "grunt-open": "^0.2.4",
     "grunt-parallel": "^0.5.1",
-    "load-grunt-tasks": "^5.1.0"
+    "grunt-stylelint": "^0.13.0",
+    "load-grunt-tasks": "^5.1.0",
+    "stylelint": "^13.0.0"
   },
   "repository": {
     "type": "git",

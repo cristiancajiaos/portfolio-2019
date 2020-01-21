@@ -1,0 +1,20 @@
+* {
+    box-sizing: border-box;
+}
+
+[ng\:cloak],
+[ng-cloak],
+[data-ng-cloak],
+[x-ng-cloak],
+ng-cloak,
+x-ng-cloak {
+    display: none !important;
+}
+
+body {
+    background: linear-gradient(to bottom right, steelblue, white);
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    font-family: $default-font;
+}
