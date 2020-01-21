@@ -26,14 +26,13 @@
             portfolioService.getPortfolio().then(function(response){
                 vm.slides = response.data;
                 vm.returnedItem = vm.slides[Math.floor(Math.random() * vm.slides.length)];
-                console.log(vm.returnedItem.tools);
             }, function(error){
                 console.log(error);
             }).finally(function(){
                 vm.loadingSlides = false;
             });
         };
-        
+
         vm.getData();
     }
 })();

@@ -122,5 +122,44 @@
                 "icon":"fa-angular"
             }
         ]
+    },
+    {
+        "id":6,
+        "title":"Portal Proveedores de Auranet",
+        "description":"Portal de Proveedores, desarrollado para Auranet",
+        "dateYear":2019,
+        "imageUrl":"img/proveedoresauranet.png",
+        "isAvailableToTry":false,
+        "sampleUrl":"",
+        "tools":[
+            {
+                "name":"HTML5",
+                "icon":"fa-html5"
+            },
+            {
+                "name":"CSS3",
+                "icon":"fa-css3-alt"
+            },
+            {
+                "name":"JavaScript",
+                "icon":"fa-js"
+            },
+            {
+                "name":"Bootstrap",
+                "icon":"fa-bootstrap"
+            },
+            {
+                "name":"AngularJS",
+                "icon":"fa-angular"
+            },
+            {
+                "name":"Grunt",
+                "icon":"fa-grunt"
+            },
+            {
+                "name":"SASS",
+                "icon":"fa-sass"
+            }
+        ]
     }
 ]

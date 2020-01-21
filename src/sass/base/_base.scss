@@ -12,7 +12,7 @@ x-ng-cloak {
 }
 
 body {
-    background: linear-gradient(to bottom right, steelblue, white);
+    background: linear-gradient(to bottom right, $base-color, white);
     background-position: center;
     background-attachment: fixed;
     background-repeat: no-repeat;
