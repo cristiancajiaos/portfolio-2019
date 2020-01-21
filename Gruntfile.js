@@ -120,6 +120,20 @@ module.exports = function (grunt) {
                 dest: 'dist/app.js'
             }
         },
+        imagemin: {
+            dist: {
+                options: {
+                    optimizationLevel: 3,
+                    progressive: true
+                },
+                files: [{
+                    expand: true,
+                    cwd: 'src/img',
+                    src: ['**/*.{png,jpg,gif}'],
+                    dest:'dist/img'
+                }]
+            }
+        },
         express: {
             all: {
                 options: {
@@ -173,6 +187,23 @@ module.exports = function (grunt) {
         'stylelint:css',
         'cssmin',
         'uglify',
+        'express',
+        'open',
+        'watch'
+    ]);
+
+    grunt.registerTask('servewithimg', [
+        'htmlhint',
+        'jshint',
+        'htmlmin:dist',
+        'ngtemplates',
+        'copy',
+        'stylelint:sass',
+        'sass:dist',
+        'stylelint:css',
+        'cssmin',
+        'uglify',
+        'imagemin',
         'express',
         'open',
         'watch'

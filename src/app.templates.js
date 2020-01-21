@@ -40,43 +40,7 @@ angular.module('app').run(['$templateCache', function($templateCache) {
     "\n" +
     "\r" +
     "\n" +
-    "        <p>Desarrollador web con más de 3 años de experiencia en el ámbito laboral, dentro de la cual se incluyen labores en:</p>\r" +
-    "\n" +
-    "\r" +
-    "\n" +
-    "        <ul>\r" +
-    "\n" +
-    "            <li>\r" +
-    "\n" +
-    "                <strong>Open Latinoamérica</strong>\r" +
-    "\n" +
-    "            </li>\r" +
-    "\n" +
-    "            <li>\r" +
-    "\n" +
-    "                <strong>Tecnova</strong>\r" +
-    "\n" +
-    "            </li>\r" +
-    "\n" +
-    "            <li>\r" +
-    "\n" +
-    "                <strong>Equifax</strong>\r" +
-    "\n" +
-    "            </li>\r" +
-    "\n" +
-    "            <li>\r" +
-    "\n" +
-    "                <strong>Digital Maker</strong>\r" +
-    "\n" +
-    "            </li>\r" +
-    "\n" +
-    "            <li>\r" +
-    "\n" +
-    "                <strong>Auranet</strong>\r" +
-    "\n" +
-    "            </li>\r" +
-    "\n" +
-    "        </ul>\r" +
+    "        <p>Desarrollador web con más de 3 años de experiencia en el ámbito laboral, dentro de la cual se incluyen labores en <strong>Open Latinoamérica</strong>, <strong>Tecnova</strong>, <strong>Equifax</strong>, <strong>Digital Maker</strong> y <strong>Auranet</strong>.</p>\r" +
     "\n" +
     "\r" +
     "\n" +
@@ -99,21 +63,23 @@ angular.module('app').run(['$templateCache', function($templateCache) {
     "\n" +
     "    <div ng-show=\"vm.loadingSlides\">\r" +
     "\n" +
-    "        <i class=\"fas fa-spinner fa-spin fa-fw\"></i> Cargando carrusel...\r" +
+    "        <i class=\"fas fa-spinner fa-spin fa-fw\"></i> Cargando item a mostrar...\r" +
     "\n" +
     "    </div>\r" +
     "\n" +
     "    <div ng-show=\"!vm.loadingSlides\">\r" +
     "\n" +
-    "        <div uib-carousel active=\"vm.active\" interval=\"vm.myInterval\" no-wrap=\"vm.noWrapSlides\" class=\"mb-1\">\r" +
+    "        <h1>{{vm.returnedItem.title}}<br/><small>({{vm.returnedItem.dateYear}})</small>\r" +
     "\n" +
-    "            <div uib-slide ng-repeat=\"slide in vm.slides track by $index\" index=\"$index\">\r" +
+    "            <i ng-repeat=\"tool in vm.returnedItem.tools\"\r" +
     "\n" +
-    "                <img ng-src=\"{{slide.imageUrl}}\" class=\"img-fluid\">\r" +
+    "                class=\"fab {{tool.icon}} fa-fw\" title=\"En este proyecto se usó {{tool.name}}\"></i>\r" +
     "\n" +
-    "            </div>\r" +
+    "        </h1>\r" +
     "\n" +
-    "        </div>\r" +
+    "\r" +
+    "\n" +
+    "        <img ng-src=\"{{vm.returnedItem.imageUrl}}\" class=\"img-fluid\" alt=\"Imagen de {{vm.returnedItem.title}}\"/>\r" +
     "\n" +
     "    </div>\r" +
     "\n" +
@@ -134,97 +100,15 @@ angular.module('app').run(['$templateCache', function($templateCache) {
     "\n" +
     "    <div ng-show=\"!vm.loadingPortfolio\">\r" +
     "\n" +
-    "\r" +
+    "        <div uib-carousel active=\"vm.active\" interval=\"vm.myInterval\" no-wrap=\"vm.noWrapSlides\" class=\"carousel mb-1\">\r" +
     "\n" +
-    "        <form novalidate>\r" +
+    "            <div uib-slide ng-repeat=\"slide in vm.portfolio track by $index\" index=\"$index\">\r" +
     "\n" +
-    "            <div class=\"form-group row\">\r" +
-    "\n" +
-    "                <label for=\"name\" class=\"col-md-3 col-sm-12 col-form-label\">\r" +
-    "\n" +
-    "                    Filtrar por nombre\r" +
-    "\n" +
-    "                </label>\r" +
-    "\n" +
-    "                <div class=\"col-md-9 col-sm-12\">\r" +
-    "\n" +
-    "                    <input class=\"form-control\" id=\"name\" name=\"name\" ng-model=\"vm.nameSearch\"/>\r" +
-    "\n" +
-    "                </div>\r" +
+    "                <img ng-src=\"{{slide.imageUrl}}\" class=\"img-fluid\">\r" +
     "\n" +
     "            </div>\r" +
     "\n" +
-    "            <div class=\"form-group row\">\r" +
-    "\n" +
-    "                <label for=\"order\" class=\"col-md-3 col-sm-12 col-form-label\">\r" +
-    "\n" +
-    "                    Ordenar por\r" +
-    "\n" +
-    "                </label>\r" +
-    "\n" +
-    "                <div class=\"col-md-9 col-sm-12\">\r" +
-    "\n" +
-    "                    <select class=\"form-control\" id=\"order\" name=\"order\"\r" +
-    "\n" +
-    "                        ng-options=\"orderOption.value as orderOption.name for orderOption in vm.orderOptions\"\r" +
-    "\n" +
-    "                        ng-model=\"vm.order\">\r" +
-    "\n" +
-    "                    </select>\r" +
-    "\n" +
-    "                </div>\r" +
-    "\n" +
-    "            </div>\r" +
-    "\n" +
-    "        </form>\r" +
-    "\n" +
-    "\r" +
-    "\n" +
-    "        <hr/>\r" +
-    "\n" +
-    "\r" +
-    "\n" +
-    "        <section class=\"portfolio-elements\">\r" +
-    "\n" +
-    "            <div class=\"portfolio-element\" ng-repeat=\"portfolioElement in vm.portfolio | filter:vm.nameSearch | orderBy:vm.order\"\r" +
-    "\n" +
-    "                ng-style=\"{'background-size':'contain',background:'url(' + portfolioElement.imageUrl + ')'}\">\r" +
-    "\n" +
-    "                <div class=\"footer\">\r" +
-    "\n" +
-    "                    <div class=\"description\">\r" +
-    "\n" +
-    "                        <h2>\r" +
-    "\n" +
-    "                            {{portfolioElement.title}}\r" +
-    "\n" +
-    "                            <small>\r" +
-    "\n" +
-    "                                ({{portfolioElement.dateYear}})\r" +
-    "\n" +
-    "                                <i ng-class=\"{'fab':true}\" ng-repeat=\"tool in portfolioElement.tools\"\r" +
-    "\n" +
-    "                                    class=\"{{tool.icon}} fa-fw\" title=\"Aquí se usó {{tool.name}}\"></i>\r" +
-    "\n" +
-    "                            </small>\r" +
-    "\n" +
-    "                        </h2>\r" +
-    "\n" +
-    "                        <p>{{portfolioElement.description}}</p>\r" +
-    "\n" +
-    "                    </div>\r" +
-    "\n" +
-    "                    <div class=\"controls\">\r" +
-    "\n" +
-    "                        Controles\r" +
-    "\n" +
-    "                    </div>\r" +
-    "\n" +
-    "                </div>\r" +
-    "\n" +
-    "            </div>\r" +
-    "\n" +
-    "        </section>\r" +
+    "        </div>\r" +
     "\n" +
     "    </div>\r" +
     "\n" +

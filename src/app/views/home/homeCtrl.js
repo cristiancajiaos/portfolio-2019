@@ -3,9 +3,9 @@
         .module('app')
         .controller('homeCtrl', homeCtrl);
 
-    homeCtrl.$inject = ['$scope', 'portfolioService'];
+    homeCtrl.$inject = ['$scope', 'portfolioService', '$interval', '$state'];
 
-    function homeCtrl($scope, portfolioService) {
+    function homeCtrl($scope, portfolioService, $interval, $state) {
         var vm = this;
         vm.title = 'Home';
 
@@ -14,21 +14,26 @@
         vm.noWrapSlides = false;
 
         vm.slides = [];
+        vm.returnedItem = {};
 
         vm.loadingSlides = false;
+
+        var promise;
 
         vm.getData = function () {
             vm.loadingSlides = true;
 
             portfolioService.getPortfolio().then(function(response){
                 vm.slides = response.data;
+                vm.returnedItem = vm.slides[Math.floor(Math.random() * vm.slides.length)];
+                console.log(vm.returnedItem.tools);
             }, function(error){
                 console.log(error);
             }).finally(function(){
                 vm.loadingSlides = false;
             });
         };
-
+        
         vm.getData();
     }
 })();

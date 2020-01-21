@@ -1,0 +1,50 @@
+h1 {
+    @media screen and (max-width: 767px) {
+        font-size: proportion(0.5, 2.5);
+    }
+}
+
+
+h2 {
+    @media screen and (max-width: 767px) {
+        font-size: proportion(0.5, 2rem);
+    }
+}
+
+h3 {
+    @media screen and (max-width: 767px) {
+        font-size: proportion(0.5, 1.75rem);
+    }
+}
+
+h4 {
+    @media screen and (max-width: 767px) {
+        font-size: proportion(0.5, 1.5rem);
+    }
+}
+
+h5 {
+    @media screen and (max-width: 767px) {
+        font-size: proportion(0.5, 1.25rem);
+    }
+}
+
+h1 {
+    @media screen and (max-width: 767px) {
+        font-size: proportion(0.5, 1rem);
+    }
+}
+
+p {
+    @media screen and (max-width: 767px) {
+        font-size: proportion(0.5, 1rem);
+    }
+}
+
+ul {
+    li {
+        @media screen and (max-width: 767px) {
+            font-size: proportion(0.5, 1rem);
+        }
+    }
+}
