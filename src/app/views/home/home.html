@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <section class="home">
     <div ng-show="vm.loadingSlides">
-        <i class="fas fa-spinner fa-spin fa-fw"></i> Cargando carrusel...
+        <i class="fas fa-spinner fa-spin fa-fw"></i> Cargando item a mostrar...
     </div>
     <div ng-show="!vm.loadingSlides">
-        <div uib-carousel active="vm.active" interval="vm.myInterval" no-wrap="vm.noWrapSlides" class="mb-1">
-            <div uib-slide ng-repeat="slide in vm.slides track by $index" index="$index">
-                <img ng-src="{{slide.imageUrl}}" class="img-fluid">
-            </div>
-        </div>
+        <h1>{{vm.returnedItem.title}}<br/><small>({{vm.returnedItem.dateYear}})</small>
+            <i ng-repeat="tool in vm.returnedItem.tools"
+                class="fab {{tool.icon}} fa-fw" title="En este proyecto se usó {{tool.name}}"></i>
+        </h1>
+
+        <img ng-src="{{vm.returnedItem.imageUrl}}" class="img-fluid" alt="Imagen de {{vm.returnedItem.title}}"/>
     </div>
 </section>

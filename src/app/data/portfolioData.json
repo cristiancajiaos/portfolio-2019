@@ -4,7 +4,7 @@
         "title":"CeAlCuadrado Networks",
         "description":"Página/Aplicación personal de CeAlCuadrado",
         "dateYear":2019,
-        "imageUrl":"http://via.placeholder.com/1366x768/ff0000",
+        "imageUrl":"img/ce2networks.png",
         "isAvailableToTry":true,
         "sampleUrl":"https://cealcuadrado.github.io",
         "tools":[
@@ -39,7 +39,7 @@
         "title":"Entrekids",
         "description":"Prototipo diseñado para trabajar en el proyecto Entrekids",
         "dateYear":2018,
-        "imageUrl":"http://via.placeholder.com/1366x768/00ff00",
+        "imageUrl":"img/entrekids.png",
         "isAvailableToTry":true,
         "sampleUrl":"https://cristiancajiao.github.io",
         "tools":[
@@ -66,7 +66,7 @@
         "title":"SeguroEdificio",
         "description":"Página del proyecto SeguroEdificio",
         "dateYear":2017,
-        "imageUrl":"http://via.placeholder.com/1366x768/0000ff",
+        "imageUrl":"img/seguroedificio.png",
         "isAvailableToTry":true,
         "sampleUrl":"https://cristiancajiaos.github.io",
         "tools":[
@@ -97,7 +97,7 @@
         "title":"Maureen Cooper English Center",
         "description":"Página de Maureen Cooper English Center",
         "dateYear":2016,
-        "imageUrl":"http://via.placeholder.com/1366x768/0f0f0f",
+        "imageUrl":"img/englishcenter.png",
         "isAvailableToTry":true,
         "sampleUrl":"https://cristiancajiaos.github.io",
         "tools":[

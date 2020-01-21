@@ -43,7 +43,7 @@
 
         <section class="social-networks">
             <a ng-repeat="socialNetwork in vm.socialNetworks" href="{{socialNetwork.url}}" target="_blank">
-                <i ng-class="{'fab':true}" class="{{socialNetwork.icon}} fa-fw fa-2x"></i>
+                <i class="fab {{socialNetwork.icon}} fa-fw fa-2x"></i>
             </a>
         </section>
 

@@ -1,33 +1,6 @@
 .portfolio {
-    .portfolio-elements {
-        &>*:not(:last-child) {
-            margin-bottom: 1rem;
-        }
-
-        .portfolio-element {
-            width: inherit;
-            height: 60vh;
-            border: 1px solid black;
-            box-shadow: 3px 3px 5px black;
-            display: flex;
-            flex-direction: column;
-            justify-content: flex-end;
-            background-size: contain;
-
-            .footer {
-                background-color: rgba(black, 0.75);
-                color: white;
-                padding: 1rem;
-                display: flex;
-
-                @media screen and (max-width: 767px) {
-                    flex-direction: column;
-                }
-
-                @media screen and (min-width: 768px) {
-                    justify-content: space-between;
-                }
-            }
-        }
+    .carousel {
+        border: 1px solid darken($base-color, 20%);
+        box-shadow: 3px 3px 5px darken($base-color, 20%);
     }
 }
