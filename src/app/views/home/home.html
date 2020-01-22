@@ -4,11 +4,15 @@
         <i class="fas fa-spinner fa-spin fa-fw"></i> Cargando item a mostrar...
     </div>
     <div ng-show="!vm.loadingSlides">
-        <h1>{{vm.returnedItem.title}}<br/><small>({{vm.returnedItem.dateYear}})</small>
-            <i ng-repeat="tool in vm.returnedItem.tools"
-                class="fab {{tool.icon}} fa-fw" title="En este proyecto se usó {{tool.name}}"></i>
-        </h1>
+        <section class="featured-item">
+            <h1>{{vm.returnedItem.title}}<br/><small>({{vm.returnedItem.dateYear}})</small>
+                <i ng-repeat="tool in vm.returnedItem.tools"
+                    class="fab {{tool.icon}} fa-fw" data-toggle="tooltip" data-placement="bottom" title="En este proyecto se usó {{tool.name}}"></i>
+            </h1>
 
-        <img ng-src="{{vm.returnedItem.imageUrl}}" class="img-fluid" alt="Imagen de {{vm.returnedItem.title}}"/>
+            <div class="foo">
+                <img ng-src="{{vm.returnedItem.imageUrl}}" class="img-fluid" alt="Imagen de {{vm.returnedItem.title}}"/>
+            </div>
+        </section>
     </div>
 </section>

@@ -9,10 +9,6 @@
         var vm = this;
         vm.title = 'Home';
 
-        vm.active = 0;
-        vm.myInterval = 5000;
-        vm.noWrapSlides = false;
-
         vm.slides = [];
         vm.returnedItem = {};
 
