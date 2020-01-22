@@ -4,21 +4,25 @@
         <i class="fas fa-spinner fa-spin fa-fw"></i> Cargando portafolio...
     </div>
     <div ng-show="!vm.loadingPortfolio">
-        <div uib-carousel active="vm.active" interval="vm.myInterval" no-wrap="vm.noWrapSlides" class="portfolio-carousel mb-1">
-            <div uib-slide ng-repeat="slide in vm.portfolio track by $index" index="$index" class="portfolio-slide">
+        <div uib-carousel active="vm.active" no-wrap="vm.noWrapSlides" class="portfolio-carousel mb-1">
+            <div uib-slide ng-repeat="slide in vm.portfolio | orderBy:'-dateYear'" index="$index" class="portfolio-slide">
                 <img ng-src="{{slide.imageUrl}}" class="d-block w-100">
                 <div class="carousel-caption portfolio-carousel-caption">
-                    <p>{{slide.title}}</p>
-                    <p>
-                        <small>({{slide.dateYear}})</small>
-                        <i ng-repeat="tool in slide.tools" class="fab {{tool.icon}} fa-fw" 
-                        data-toggle="tooltip" data-placement="bottom" 
-                        title="En este proyecto se usó {{tool.name}}"></i>
-                    </p>
+                    {{slide.title | uppercase}} ({{slide.dateYear}})
+                    <a ng-show="slide.isAvailableToTry" ng-href="{{slide.sampleUrl}}" target="_blank"
+                        tooltip-placement="top" uib-tooltip="Este elemento del portafolio se puede probar. Haz click para abrirlo en una pestaña nueva.">
+                        <i class="fas fa-eye fa-fw"></i>
+                    </a>
+                    <br />
+                    <div class="tools">
+                        <span ng-repeat="tool in slide.tools" tooltip-placement="top"
+                        uib-tooltip="En este proyecto se usó {{tool.name}}">
+                            <i class="fab {{tool.icon}} fa-fw">
+                            </i>
+                        </span>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-
-    <!-- <p>¿Opciones de visualización?</p> -->
 </section>

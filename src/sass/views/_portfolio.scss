@@ -4,8 +4,36 @@
         box-shadow: 3px 3px 5px darken($base-color, 20%);
 
         .portfolio-carousel-caption {
-            position:static;
-            background: rgba($base-color, 80);
+            position: absolute;
+            bottom:22px;
+            text-align:center;
+            color: darken($base-color, 80%);
+            background-color: rgba($base-color, 0.85);
+            font-weight: bold;
+
+            @media screen and (max-width: 767px) {
+                font-size:0.75rem;
+                padding:0.25rem;
+            }
+
+            @media screen and (min-width: 768px) {
+                font-size: 1rem;
+                padding:0.5rem;
+            }
+
+            a {
+                color: white;
+
+                &:hover {
+                    opacity: 0.5;
+                }
+            }
+
+            .tools {
+                @media screen and (max-width: 767px) {
+                    display: none;
+                }
+            }
         }
 
         .carousel-control-prev {
@@ -21,15 +49,11 @@
         }
 
         .carousel-indicators {
-            position: relative;
-            background-color: rgba($base-color, 80);
+            border-top: 1px solid darken($base-color, 20%);
+            background-color: rgba($base-color, 0.85);
             margin-left:0;
             margin-right:0;
             margin-bottom:0;
-        }
-
-        .portfolio-slide {
-
         }
     }
 }

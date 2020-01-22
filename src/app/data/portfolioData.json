@@ -17,7 +17,7 @@
                 "icon":"fa-css3-alt"
             },
             {
-                "name":"JavaScript",
+                "name":"JavaScript (+jQuery)",
                 "icon":"fa-js"
             },
             {
@@ -29,7 +29,7 @@
                 "icon":"fa-grunt"
             },
             {
-                "name":"SASS",
+                "name":"SASS (sintáxis SCSS)",
                 "icon":"fa-sass"
             }
         ]
@@ -41,7 +41,7 @@
         "dateYear":2018,
         "imageUrl":"img/entrekids.png",
         "isAvailableToTry":true,
-        "sampleUrl":"https://cristiancajiao.github.io",
+        "sampleUrl":"https://cristiancajiaos.github.io/completesites/entrekids/",
         "tools":[
             {
                 "name":"HTML5",
@@ -52,11 +52,11 @@
                 "icon":"fa-css3-alt"
             },
             {
-                "name":"JavaScript",
+                "name":"JavaScript (+jQuery)",
                 "icon":"fa-js"
             },
             {
-                "name":"Bootstrap",
+                "name":"Bootstrap 4",
                 "icon":"fa-bootstrap"
             }
         ]
@@ -68,7 +68,7 @@
         "dateYear":2017,
         "imageUrl":"img/seguroedificio.png",
         "isAvailableToTry":true,
-        "sampleUrl":"https://cristiancajiaos.github.io",
+        "sampleUrl":"https://cristiancajiaos.github.io/completesites/seguroedificio/",
         "tools":[
             {
                 "name":"HTML5",
@@ -79,11 +79,11 @@
                 "icon":"fa-css3-alt"
             },
             {
-                "name":"JavaScript",
+                "name":"JavaScript (+jQuery)",
                 "icon":"fa-js"
             },
             {
-                "name":"Bootstrap",
+                "name":"Bootstrap 3",
                 "icon":"fa-bootstrap"
             },
             {
@@ -94,12 +94,12 @@
     },
     {
         "id":4,
-        "title":"Maureen Cooper English Center",
+        "title":"English Center",
         "description":"Página de Maureen Cooper English Center",
         "dateYear":2016,
         "imageUrl":"img/englishcenter.png",
         "isAvailableToTry":true,
-        "sampleUrl":"https://cristiancajiaos.github.io",
+        "sampleUrl":"https://cristiancajiaos.github.io/completesites/englishcenter/",
         "tools":[
             {
                 "name":"HTML5",
@@ -110,11 +110,11 @@
                 "icon":"fa-css3-alt"
             },
             {
-                "name":"JavaScript",
+                "name":"JavaScript (+jQuery)",
                 "icon":"fa-js"
             },
             {
-                "name":"Bootstrap",
+                "name":"Bootstrap 3",
                 "icon":"fa-bootstrap"
             },
             {
@@ -124,8 +124,8 @@
         ]
     },
     {
-        "id":6,
-        "title":"Portal Proveedores de Auranet",
+        "id":5,
+        "title":"Portal Proveedores",
         "description":"Portal de Proveedores, desarrollado para Auranet",
         "dateYear":2019,
         "imageUrl":"img/proveedoresauranet.png",
@@ -141,11 +141,11 @@
                 "icon":"fa-css3-alt"
             },
             {
-                "name":"JavaScript",
+                "name":"JavaScript (+jQuery)",
                 "icon":"fa-js"
             },
             {
-                "name":"Bootstrap",
+                "name":"Bootstrap 3 y 4",
                 "icon":"fa-bootstrap"
             },
             {
@@ -157,7 +157,7 @@
                 "icon":"fa-grunt"
             },
             {
-                "name":"SASS",
+                "name":"SASS (sintáxis SCSS)",
                 "icon":"fa-sass"
             }
         ]
