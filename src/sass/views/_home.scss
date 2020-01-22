@@ -1,16 +1,8 @@
 .home {
     .featured-item {
-        h1 {
-            background-color: darken($base-color, 80);
-            padding: 1rem; 
-            color: white;
+        img {
             border: 1px solid darken($base-color, 20%);
             box-shadow: 3px 3px 5px darken($base-color, 20%);
         }
-    
-            img {
-                border: 1px solid darken($base-color, 20%);
-                box-shadow: 3px 3px 5px darken($base-color, 20%);
-            }
     }
 }

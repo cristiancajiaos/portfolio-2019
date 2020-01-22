@@ -1,0 +1,4 @@
+@mixin base-header {
+    color: darken($base-color, 80%);
+    font-weight: bold;
+}
