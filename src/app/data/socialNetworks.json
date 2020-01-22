@@ -1,19 +1,19 @@
 [
     {
         "name":"Twitter",
-        "url":"http://www.twitter.com",
+        "url":"https://twitter.com/cristiancajiaos",
         "icon":"fa-twitter"
     }, {
         "name":"LinkedIn",
-        "url":"http://www.linkedin.com",
+        "url":"https://www.linkedin.com/in/cristiancajiaos",
         "icon":"fa-linkedin"
     }, {
         "name": "Codepen",
-        "url":"http://www.codepen.com",
+        "url":"https://codepen.io/cristiancajiaos",
         "icon":"fa-codepen"
     }, {
         "name":"GitHub",
-        "url":"http://www.github.com",
+        "url":"https://github.com/cristiancajiaos",
         "icon":"fa-github"
     }
 ]

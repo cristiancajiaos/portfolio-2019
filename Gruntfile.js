@@ -170,7 +170,7 @@ module.exports = function (grunt) {
                 tasks: ['stylelint:sass', 'sass:dist', 'stylelint:css', 'cssmin:dist']
             },
             js: {
-                files: ['Gruntfile.js', 'src/app.js', 'src/app/**/*.js'],
+                files: ['src/app.js', 'src/app/**/*.js'],
                 tasks: ['jshint', 'uglify:dist']
             }
         }

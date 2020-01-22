@@ -2,5 +2,34 @@
     .carousel {
         border: 1px solid darken($base-color, 20%);
         box-shadow: 3px 3px 5px darken($base-color, 20%);
+
+        .portfolio-carousel-caption {
+            position:static;
+            background: rgba($base-color, 80);
+        }
+
+        .carousel-control-prev {
+            &:hover {
+                background: linear-gradient(to right, rgba($base-color, 80), transparent);
+            }
+        }
+
+        .carousel-control-next {
+            &:hover {
+                background: linear-gradient(to left, rgba($base-color, 80), transparent);
+            }
+        }
+
+        .carousel-indicators {
+            position: relative;
+            background-color: rgba($base-color, 80);
+            margin-left:0;
+            margin-right:0;
+            margin-bottom:0;
+        }
+
+        .portfolio-slide {
+
+        }
     }
 }

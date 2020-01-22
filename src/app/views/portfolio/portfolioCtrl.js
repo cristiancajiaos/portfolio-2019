@@ -9,6 +9,10 @@
         var vm = this;
         vm.title = 'Portafolio';
 
+        vm.active = 0;
+        vm.myInterval = 5000;
+        vm.noWrapSlides = false;
+
         vm.loadingPortfolio = false;
         vm.portfolio = [];
 
