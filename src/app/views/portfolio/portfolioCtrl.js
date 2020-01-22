@@ -3,37 +3,19 @@
         .module('app')
         .controller('portfolioCtrl', portfolioCtrl);
 
-    portfolioCtrl.$inject = ['$scope', 'portfolioService'];
+    portfolioCtrl.$inject = ['$scope', 'basicData', 'portfolioService'];
 
-    function portfolioCtrl($scope, portfolioService){
+    function portfolioCtrl($scope, basicData, portfolioService){
         var vm = this;
         vm.title = 'Portafolio';
 
         vm.active = 0;
-        vm.myInterval = 5000;
         vm.noWrapSlides = false;
 
         vm.loadingPortfolio = false;
         vm.portfolio = [];
 
-        vm.nameSearch = '';
-        vm.order = 'title';
-
-        vm.orderOptions = [
-            {
-                value:'title',
-                name:"Título (ascendiente)"
-            }, {
-                value:"-title",
-                name:"Título (descendiente)"
-            }, {
-                value:"dateYear",
-                name:"Año (menos actual a menos actual)"
-            }, {
-                value: '-dateYear',
-                name:'Año (más actual a menos actual)'
-            }
-        ];
+        vm.tooltipPlacement = 'bottom';
 
         vm.getData = function(){
             vm.loadingPortfolio = true;
