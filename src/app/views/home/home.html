@@ -5,13 +5,19 @@
     </div>
     <div ng-show="!vm.loadingSlides">
         <section class="featured-item">
-            <h1>{{vm.returnedItem.title}}<br/><small>({{vm.returnedItem.dateYear}})</small>
-                <i ng-repeat="tool in vm.returnedItem.tools"
-                    class="fab {{tool.icon}} fa-fw" data-toggle="tooltip" data-placement="bottom" title="En este proyecto se usó {{tool.name}}"></i>
+            <h1>{{vm.returnedItem.title}}
+                <br/>
+                <small>
+                ({{vm.returnedItem.dateYear}})
+                <span ng-repeat="tool in vm.returnedItem.tools" tooltip-placement="bottom"
+                    uib-tooltip="En este proyecto se usó {{tool.name}}">
+                    <i class="fab {{tool.icon}} fa-fw" ></i>
+                </span>
+                </small>
             </h1>
 
             <div class="foo">
-                <img ng-src="{{vm.returnedItem.imageUrl}}" class="img-fluid" alt="Imagen de {{vm.returnedItem.title}}"/>
+                <img ng-src="{{vm.returnedItem.imageUrl}}" class="img-fluid img-zoomable" alt="Imagen de {{vm.returnedItem.title}}"/>
             </div>
         </section>
     </div>
