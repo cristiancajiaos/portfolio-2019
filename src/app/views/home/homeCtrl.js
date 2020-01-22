@@ -3,9 +3,9 @@
         .module('app')
         .controller('homeCtrl', homeCtrl);
 
-    homeCtrl.$inject = ['$scope', 'portfolioService', '$interval', '$state'];
+    homeCtrl.$inject = ['$scope', 'basicData', 'portfolioService', '$interval', '$state'];
 
-    function homeCtrl($scope, portfolioService, $interval, $state) {
+    function homeCtrl($scope, basicData, portfolioService, $interval, $state) {
         var vm = this;
         vm.title = 'Home';
 

@@ -8,5 +8,7 @@
     function aboutCtrl($scope, basicData){
         var vm = this;
         vm.title = 'Acerca de';
+
+        vm.name = basicData.name;
     }
 })();

@@ -1,4 +1,8 @@
 .about {
+    & > *:not(:last-child) {
+        margin-bottom: 1rem;
+    }
+
     .me {
         img {
             border: 1px solid darken($base-color, 20%);

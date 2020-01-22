@@ -110,8 +110,7 @@ module.exports = function (grunt) {
                     'node_modules/angular-touch/angular-touch.js',
                     'node_modules/@uirouter/angularjs/release/angular-ui-router.js',
                     'node_modules/ui-bootstrap4/dist/ui-bootstrap-tpls.js',
-                    'node_modules/@fortawesome/fontawesome-free/js/all.js',
-                    'node_modules/medium-zoom/dist/medium-zoom-js'
+                    'node_modules/@fortawesome/fontawesome-free/js/all.js'
                 ],
                 dest: 'dist/js/libs.js'
             },

@@ -1,10 +1,11 @@
 /* Abstract */
 @import 'abstracts/_variables';
 @import 'abstracts/_functions';
+@import 'abstracts/_mixins';
 
 /* Base */
 @import 'base/_base';
-@import 'base/_textsizes';
+@import 'base/_text';
 
 /* Components */
 

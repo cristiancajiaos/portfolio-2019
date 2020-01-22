@@ -3,7 +3,7 @@ header {
     border-bottom: 1px solid black;
     box-shadow: 3px 3px 5px black;
     background: linear-gradient(to bottom right, steelblue, white);
-    z-index:9999;
+    z-index: 9999;
 
     & > *:not(:last-child) {
         margin-bottom: 1rem;
