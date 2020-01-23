@@ -1,7 +1,7 @@
 [
     {
         "id":1,
-        "title":"CeAlCuadrado Networks",
+        "title":"Ce2 Networks",
         "description":"Página/Aplicación personal de CeAlCuadrado",
         "dateYear":2019,
         "imageUrl":"img/ce2networks.png",
@@ -17,7 +17,7 @@
                 "icon":"fa-css3-alt"
             },
             {
-                "name":"JavaScript (+jQuery)",
+                "name":"JavaScript",
                 "icon":"fa-js"
             },
             {
@@ -29,7 +29,7 @@
                 "icon":"fa-grunt"
             },
             {
-                "name":"SASS (sintáxis SCSS)",
+                "name":"SASS (sintaxis SCSS)",
                 "icon":"fa-sass"
             }
         ]
@@ -63,7 +63,7 @@
     },
     {
         "id":3,
-        "title":"SeguroEdificio",
+        "title":"Seguro Edificio",
         "description":"Página del proyecto SeguroEdificio",
         "dateYear":2017,
         "imageUrl":"img/seguroedificio.png",
@@ -125,7 +125,7 @@
     },
     {
         "id":5,
-        "title":"Portal Proveedores",
+        "title":"Portal Auranet",
         "description":"Portal de Proveedores, desarrollado para Auranet",
         "dateYear":2019,
         "imageUrl":"img/proveedoresauranet.png",
@@ -157,8 +157,54 @@
                 "icon":"fa-grunt"
             },
             {
-                "name":"SASS (sintáxis SCSS)",
+                "name":"SASS (sintaxis SCSS)",
                 "icon":"fa-sass"
+            }
+        ]
+    },
+    {
+        "id":6,
+        "title":"Selecciona un Color",
+        "description":"Seleccionador de color, en base a código hexadecimal, RGB, y por nombre.",
+        "dateYear":2018,
+        "imageUrl":"img/seleccionacolor.png",
+        "isAvailableToTry":true,
+        "sampleUrl":"https://cristiancajiaos.github.io/completesites/selectcolor/",
+        "tools":[
+            {
+                "name":"HTML5",
+                "icon":"fa-html5"
+            },
+            {
+                "name":"CSS3",
+                "icon":"fa-css3-alt"
+            },
+            {
+                "name":"JavaScript (+jQuery y solicitudes AJAX)",
+                "icon":"fa-js"
+            },
+            {
+                "name":"Bootstrap 4",
+                "icon":"fa-bootstrap"
+            }
+        ]
+    },
+    {
+        "id":7,
+        "title":"TweenJS Docs Page",
+        "description":"Documentación de TweenJS, creada como proyecto de FreeCodeCamp",
+        "dateYear":2018,
+        "imageUrl":"http://via.placeholder.com/1351x626?text=TweenJS+Docs+Page",
+        "isAvailableToTry":true,
+        "sampleUrl":"https://codepen.io/CrisMVP3200/full/BVYjXw/",
+        "tools":[
+            {
+                "name":"HTML5",
+                "icon":"fa-html5"
+            },
+            {
+                "name":"CSS3",
+                "icon":"fa-css3-alt"
             }
         ]
     }
