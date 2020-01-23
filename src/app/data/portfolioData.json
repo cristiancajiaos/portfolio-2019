@@ -2,7 +2,7 @@
     {
         "id":1,
         "title":"Ce2 Networks",
-        "description":"Página/Aplicación personal de CeAlCuadrado",
+        "description":"Página/Aplicación personal de CeAlCuadrado (perfil usado online)",
         "dateYear":2019,
         "imageUrl":"img/ce2networks.png",
         "isAvailableToTry":true,
@@ -37,7 +37,7 @@
     {
         "id":2,
         "title":"Entrekids",
-        "description":"Prototipo diseñado para trabajar en el proyecto Entrekids",
+        "description":"Prototipo diseñado para trabajar en el proyecto Entrekids.",
         "dateYear":2018,
         "imageUrl":"img/entrekids.png",
         "isAvailableToTry":true,
@@ -64,7 +64,7 @@
     {
         "id":3,
         "title":"Seguro Edificio",
-        "description":"Página del proyecto SeguroEdificio",
+        "description":"Página del proyecto SeguroEdificio.",
         "dateYear":2017,
         "imageUrl":"img/seguroedificio.png",
         "isAvailableToTry":true,
@@ -95,7 +95,7 @@
     {
         "id":4,
         "title":"English Center",
-        "description":"Página de Maureen Cooper English Center",
+        "description":"Página de Maureen Cooper English Center.",
         "dateYear":2016,
         "imageUrl":"img/englishcenter.png",
         "isAvailableToTry":true,
@@ -126,11 +126,10 @@
     {
         "id":5,
         "title":"Portal Auranet",
-        "description":"Portal de Proveedores, desarrollado para Auranet",
+        "description":"Aplicación de Portal de Proveedores, desarrollada para Auranet.",
         "dateYear":2019,
         "imageUrl":"img/proveedoresauranet.png",
         "isAvailableToTry":false,
-        "sampleUrl":"",
         "tools":[
             {
                 "name":"HTML5",
@@ -165,7 +164,7 @@
     {
         "id":6,
         "title":"Selecciona un Color",
-        "description":"Seleccionador de color, en base a código hexadecimal, RGB, y por nombre.",
+        "description":"Seleccionador de color, por código hexadecimal, valores RGB, y por nombre.",
         "dateYear":2018,
         "imageUrl":"img/seleccionacolor.png",
         "isAvailableToTry":true,
@@ -192,9 +191,9 @@
     {
         "id":7,
         "title":"TweenJS Docs Page",
-        "description":"Documentación de TweenJS, creada como proyecto de FreeCodeCamp",
+        "description":"Documentación de TweenJS, creada para FreeCodeCamp. Snippet de código. En inglés.",
         "dateYear":2018,
-        "imageUrl":"http://via.placeholder.com/1351x626?text=TweenJS+Docs+Page",
+        "imageUrl":"img/tweenjsdocs.png",
         "isAvailableToTry":true,
         "sampleUrl":"https://codepen.io/CrisMVP3200/full/BVYjXw/",
         "tools":[
@@ -205,6 +204,106 @@
             {
                 "name":"CSS3",
                 "icon":"fa-css3-alt"
+            },
+            {
+                "name":"CodePen",
+                "icon":"fa-codepen"
+            }
+        ]
+    },
+    {
+        "id":8,
+        "title":"Seleccionador de Comunas",
+        "description":"Seleccionador de región, provincia y comuna en Chile. Snippet de código.",
+        "dateYear":2018,
+        "imageUrl":"img/seleccionadorcomunas.png",
+        "isAvailableToTry":true,
+        "sampleUrl":"https://codepen.io/CrisMVP3200/full/BVYjXw/",
+        "tools":[
+            {
+                "name":"HTML5",
+                "icon":"fa-html5"
+            },
+            {
+                "name":"CSS3",
+                "icon":"fa-css3-alt"
+            },
+            {
+                "name":"JavaScript",
+                "icon":"fa-js"
+            },
+            {
+                "name":"Bootstrap 4",
+                "icon":"fa-bootstrap"
+            },
+            {
+                "name":"Vue.js",
+                "icon":"fa-vuejs"
+            },
+            {
+                "name":"CodePen",
+                "icon":"fa-codepen"
+            }
+        ]
+    },
+    {
+        "id":9,
+        "title":"Cristian Ve Docs",
+        "description":"Plantilla para el blog personal Cristian Ve Docs.",
+        "dateYear":2018,
+        "imageUrl":"img/cristianvedocs.png",
+        "isAvailableToTry":false,
+        "tools":[
+            {
+                "name":"HTML5",
+                "icon":"fa-html5"
+            },
+            {
+                "name":"CSS3",
+                "icon":"fa-css3-alt"
+            },
+            {
+                "name":"JavaScript (+jQuery)",
+                "icon":"fa-js"
+            },
+            {
+                "name":"Bootstrap 4",
+                "icon":"fa-bootstrap"
+            }
+        ]
+    },
+    {
+        "id":10,
+        "title":"Live Profile Enhanced",
+        "description":"Llenado de datos de un perfil, con vista previa. Snippet de código. En inglés.",
+        "dateYear":2019,
+        "imageUrl":"img/liveprofileenhanced.png",
+        "isAvailableToTry":true,
+        "sampleUrl":"https://codepen.io/cristiancajiaos/full/wVMNaL",
+        "tools":[
+            {
+                "name":"HTML5",
+                "icon":"fa-html5"
+            },
+            {
+                "name":"CSS3",
+                "icon":"fa-css3-alt"
+            },
+            {
+                "name":"JavaScript (+jQuery)",
+                "icon":"fa-js"
+            },
+            {
+                "name":"Bootstrap 3",
+                "icon":"fa-bootstrap"
+            },
+            {
+                "name":"AngularJS",
+                "icon":"fa-angular"
+            },
+            {
+                "name":"CodePen",
+                "icon":"fa-codepen"
             }
         ]
     }
