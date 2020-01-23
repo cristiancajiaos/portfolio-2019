@@ -1,3 +1,0 @@
-@function proportion($factor, $base){
-    @return($factor * $base)+rem;
-}
