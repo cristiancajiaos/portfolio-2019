@@ -5,7 +5,6 @@
 
         .portfolio-carousel-caption {
             position: absolute;
-            bottom:22px;
             text-align:center;
             color: darken($base-color, 80%);
             background-color: rgba($base-color, 0.85);
@@ -14,11 +13,13 @@
             @media screen and (max-width: 767px) {
                 font-size:0.75rem;
                 padding:0.25rem;
+                bottom:23px;
             }
 
             @media screen and (min-width: 768px) {
                 font-size: 1rem;
                 padding:0.5rem;
+                bottom:24px;
             }
 
             a {
@@ -54,6 +55,14 @@
             margin-left:0;
             margin-right:0;
             margin-bottom:0;
+
+            li {
+                width: 15px;
+
+                &.active {
+                    background-color: darken($base-color, 20%);
+                }
+            }
         }
     }
 }

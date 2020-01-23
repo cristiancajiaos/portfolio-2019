@@ -56,6 +56,13 @@ aside {
             }
         }
 
+        .flair {
+            img {
+                border: 1px solid darken($base-color, 20%);
+                box-shadow: 3px 3px 5px darken($base-color, 20%);        
+            }
+        }
+
         .contact-mail, .copyright {
             font-size: 0.75rem;
         }

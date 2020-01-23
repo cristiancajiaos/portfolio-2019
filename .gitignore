@@ -1,5 +1,6 @@
 node_modules
 dist
+release
 src/css
 src/app.templates.js
 .sass-cache

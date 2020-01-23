@@ -6,7 +6,7 @@
     <div ng-show="!vm.loadingPortfolio">
         <div uib-carousel active="vm.active" no-wrap="vm.noWrapSlides" class="portfolio-carousel mb-1">
             <div uib-slide ng-repeat="slide in vm.portfolio | orderBy:'-dateYear'" index="$index" class="portfolio-slide">
-                <img ng-src="{{slide.imageUrl}}" class="d-block w-100">
+                <img ng-src="{{slide.imageUrl}}" class="d-block w-100" alt="{{slide.description}}">
                 <div class="carousel-caption portfolio-carousel-caption">
                     {{slide.title | uppercase}} ({{slide.dateYear}})
                     <span tooltip-placement="top" uib-tooltip="{{slide.description}}">
