@@ -3,7 +3,13 @@
         .module('app')
         .controller('navCtrl', navCtrl);
 
-    navCtrl.$inject = ['$scope', 'basicData', 'navOptionsService', 'socialService', 'dateService'];
+    navCtrl.$inject = [
+        '$scope',
+        'basicData',
+        'navOptionsService',
+        'socialService',
+        'dateService'
+    ];
 
     function navCtrl($scope, basicData, navOptionsService, socialService, dateService) {
         var vm = this;

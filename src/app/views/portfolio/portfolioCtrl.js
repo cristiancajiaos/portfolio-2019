@@ -3,7 +3,11 @@
         .module('app')
         .controller('portfolioCtrl', portfolioCtrl);
 
-    portfolioCtrl.$inject = ['$scope', 'basicData', 'portfolioService'];
+    portfolioCtrl.$inject = [
+        '$scope',
+        'basicData',
+        'portfolioService'
+    ];
 
     function portfolioCtrl($scope, basicData, portfolioService){
         var vm = this;
