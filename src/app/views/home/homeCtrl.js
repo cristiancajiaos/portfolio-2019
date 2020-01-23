@@ -3,7 +3,13 @@
         .module('app')
         .controller('homeCtrl', homeCtrl);
 
-    homeCtrl.$inject = ['$scope', 'basicData', 'portfolioService', '$interval', '$state'];
+    homeCtrl.$inject = [
+        '$scope',
+        'basicData',
+        'portfolioService',
+        '$interval',
+        '$state'
+    ];
 
     function homeCtrl($scope, basicData, portfolioService, $interval, $state) {
         var vm = this;

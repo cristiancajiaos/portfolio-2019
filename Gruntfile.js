@@ -57,7 +57,10 @@ module.exports = function (grunt) {
         ngtemplates: {
             dist: {
                 cwd: 'src/app',
-                src: ['views/**/*.html', 'layout/**/*.html'],
+                src: [
+                    'views/**/*.html',
+                    'layout/**/*.html'
+                ],
                 dest: 'src/app.templates.js',
                 options: {
                     module: 'app',
@@ -66,7 +69,10 @@ module.exports = function (grunt) {
             },
             release: {
                 cwd: 'src/app',
-                src: ['views/**/*.html', 'layout/**/*.html'],
+                src: [
+                    'views/**/*.html',
+                    'layout/**/*.html'
+                ],
                 dest: 'release/app.templates.js',
                 options: {
                     module: 'app',
@@ -138,7 +144,11 @@ module.exports = function (grunt) {
                 compress: true,
                 removeComments: true,
                 mangle: {
-                    reserved: ['$stateProvider', '$urlRouterProvider', 'navOptionsService']
+                    reserved: [
+                        '$stateProvider',
+                        '$urlRouterProvider',
+                        'navOptionsService'
+                    ]
                 }
             },
             libsdist: {
