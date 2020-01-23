@@ -6,29 +6,29 @@
     <div ng-show="!vm.loadingSlides">
         <section class="featured-item">
             <h1>
-                {{vm.returnedItem.title}} 
+                {{vm.returnedItem.title}}
                 <small>
-                    ({{vm.returnedItem.dateYear}}) 
-                    <span tooltip-placement="bottom" uib-tooltip="{{vm.returnedItem.description}}">
+                    ({{vm.returnedItem.dateYear}})
+                    <span tooltip-placement="right" uib-tooltip="{{vm.returnedItem.description}}">
                         <i class="fas fa-info-circle fa-fw"></i>
                     </span>
-                    <a ng-href="{{vm.returnedItem.sampleUrl}}" target="_blank"
-                        tooltip-placement="bottom" 
+                    <a ng-show="vm.returnedItem.isAvailableToTry" ng-href="{{vm.returnedItem.sampleUrl}}" target="_blank" tooltip-placement="bottom"
                         uib-tooltip="Este proyecto se puede probar en el navegador. Haz click para abrirlo en una pestaña nueva.">
                         <i class="fas fa-eye fa-fw"></i>
                     </a>
-                </small> 
-                <br/>
+                </small>
+                <br />
                 <small>
-                <span ng-repeat="tool in vm.returnedItem.tools" tooltip-placement="bottom"
-                    uib-tooltip="En este proyecto se usó {{tool.name}}">
-                    <i class="fab {{tool.icon}} fa-fw" ></i>
-                </span>
+                    <span ng-repeat="tool in vm.returnedItem.tools" tooltip-placement="right"
+                        uib-tooltip="En este proyecto se usó {{tool.name}}">
+                        <i class="fab {{tool.icon}} fa-fw"></i>
+                    </span>
                 </small>
             </h1>
 
             <div class="foo">
-                <img ng-src="{{vm.returnedItem.imageUrl}}" class="img-fluid img-zoomable" alt="Imagen de {{vm.returnedItem.title}}"/>
+                <img ng-src="{{vm.returnedItem.imageUrl}}" class="img-fluid img-zoomable"
+                    alt="Imagen de {{vm.returnedItem.title}}" />
             </div>
         </section>
     </div>
