@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<header>
+    <section class="title">
+        <img src="img/perfil.png" alt="Imagen de perfil" />
+        <button type="button" role="button" data-toggle="collapse" href="#collapseNav" aria-expanded="false"
+            aria-controls="collapseNav">
+            <i class="fas fa-bars fa-fw"></i>
+        </button>
+    </section>
+
+    <div id="collapseNav" class="collapse">
+        <nav>
+            <a ng-repeat="option in vm.navOptions" ui-sref="{{option.uiSref}}" ui-sref-active="vm.uiSrefActive"
+                ng-click="vm.toggleCollapse()">
+                {{option.content}}
+            </a>
+        </nav>
+    </div>
+</header>

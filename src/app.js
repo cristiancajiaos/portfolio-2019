@@ -11,20 +11,17 @@
             {
                 name: 'home',
                 url: '/home',
-                templateUrl: 'views/home/home.html',
-                controller: 'homeCtrl as vm',
+                component: 'homeComponent'
             },
             {
                 name: 'about',
                 url: '/about',
-                templateUrl: 'views/about/about.html',
-                controller: 'aboutCtrl as vm',
+                component: 'aboutComponent'
             },
             {
                 name: 'portfolio',
                 url: '/portfolio',
-                templateUrl: 'views/portfolio/portfolio.html',
-                controller: 'portfolioCtrl as vm',
+                component: 'portfolioComponent'
             },
         ];
 
