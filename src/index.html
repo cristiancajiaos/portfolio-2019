@@ -11,89 +11,17 @@
 </head>
 
 <body>
-    <header ng-controller="navCtrl as vm">
-        <section class="title">
-            <img src="img/perfil.png" alt="Imagen de perfil" />
-            <button type="button" role="button" data-toggle="collapse" href="#collapseNav" aria-expanded="false"
-                aria-controls="collapseNav">
-                <i class="fas fa-bars fa-fw"></i>
-            </button>
-        </section>
+    <header-component>
+    </header-component>
 
-        <div id="collapseNav" class="collapse">
-            <nav>
-                <a ng-repeat="option in vm.navOptions" ui-sref="{{option.uiSref}}" ui-sref-active="vm.uiSrefActive"
-                    ng-click="vm.toggleCollapse()">
-                    {{option.content}}
-                </a>
-            </nav>
-        </div>
-    </header>
-
-    <aside ng-controller="navCtrl as vm">
-        <section class="profile-image">
-            <img src="img/perfil.png" alt="Imagen de perfil"/>
-        </section>
-
-        <nav>
-            <a ng-repeat="option in vm.navOptions" ui-sref="{{option.uiSref}}" ui-sref-active="vm.uiSrefActive">
-                {{option.content}}
-            </a>
-        </nav>
-
-        <section class="social-networks">
-            <a ng-repeat="socialNetwork in vm.socialNetworks" href="{{socialNetwork.url}}" target="_blank">
-                <i class="fab {{socialNetwork.icon}} fa-fw fa-2x"></i>
-            </a>
-        </section>
-
-        <section class="flair">
-            <a href="https://stackexchange.com/users/6440637">
-                <img src="https://stackexchange.com/users/flair/6440637.png" width="208" height="58"
-                    alt="perfil para CeAlCuadrado en Stack Exchange, una red de sitios gratuitos de preguntas y respuestas impulsados por la comunidad"
-                    title="perfil para CeAlCuadrado en Stack Exchange, una red de sitios gratuitos de preguntas y respuestas impulsados por la comunidad">
-            </a>
-        </section>
-
-        <section class="contact-mail">
-            <i class="fas fa-envelope"></i> {{vm.email}}
-        </section>
-
-        <section class="copyright">
-            &#169; {{vm.year}}
-        </section>
-    </aside>
+    <aside-component>
+    </aside-component>
 
     <main ui-view>
     </main>
 
-    <footer ng-controller="navCtrl as vm">
-        <section class="social-networks">
-            <a ng-repeat="socialNetwork in vm.socialNetworks" href="{{socialNetwork.url}}" target="_blank">
-                <i ng-class="{'fab':true}" class="{{socialNetwork.icon}} fa-2x fa-fw"></i>
-            </a>
-        </section>
-
-        <hr />
-
-        <section class="flair">
-            <a href="https://stackexchange.com/users/6440637">
-                <img src="https://stackexchange.com/users/flair/6440637.png" width="208" height="58"
-                    alt="perfil para CeAlCuadrado en Stack Exchange, una red de sitios gratuitos de preguntas y respuestas impulsados por la comunidad"
-                    title="perfil para CeAlCuadrado en Stack Exchange, una red de sitios gratuitos de preguntas y respuestas impulsados por la comunidad">
-            </a>
-        </section>
-
-        <hr />
-
-        <section class="contact-mail">
-            <i class="fas fa-envelope"></i> {{vm.email}}
-        </section>
-
-        <section class="copyright">
-            &#169; {{vm.year}}
-        </section>
-    </footer>
+    <footer-component>
+    </footer-component>
 
     <script src="js/libs.js"></script>
     <script src="app.js"></script>

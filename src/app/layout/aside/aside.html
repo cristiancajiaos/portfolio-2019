@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<aside>
+    <section class="profile-image">
+        <img src="img/perfil.png" alt="Imagen de perfil"/>
+    </section>
+
+    <nav>
+        <a ng-repeat="option in vm.navOptions" ui-sref="{{option.uiSref}}" ui-sref-active="vm.uiSrefActive">
+            {{option.content}}
+        </a>
+    </nav>
+
+    <section class="social-networks">
+        <a ng-repeat="socialNetwork in vm.socialNetworks" href="{{socialNetwork.url}}" target="_blank">
+            <i class="fab {{socialNetwork.icon}} fa-fw fa-2x"></i>
+        </a>
+    </section>
+
+    <section class="flair">
+        <a href="https://stackexchange.com/users/6440637">
+            <img src="https://stackexchange.com/users/flair/6440637.png" width="208" height="58"
+                alt="perfil para CeAlCuadrado en Stack Exchange, una red de sitios gratuitos de preguntas y respuestas impulsados por la comunidad"
+                title="perfil para CeAlCuadrado en Stack Exchange, una red de sitios gratuitos de preguntas y respuestas impulsados por la comunidad">
+        </a>
+    </section>
+
+    <section class="contact-mail">
+        <i class="fas fa-envelope"></i> {{vm.email}}
+    </section>
+
+    <section class="copyright">
+        &#169; {{vm.year}}
+    </section>
+</aside>
