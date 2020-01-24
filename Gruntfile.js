@@ -67,18 +67,6 @@ module.exports = function (grunt) {
                     htmlmin: '<%= htmlmin.options %>'
                 }
             },
-            release: {
-                cwd: 'src/app',
-                src: [
-                    'views/**/*.html',
-                    'layout/**/*.html'
-                ],
-                dest: 'release/app.templates.js',
-                options: {
-                    module: 'app',
-                    htmlmin: '<%= htmlmin.options %>'
-                }
-            }
         },
         copy: {
             dist: {
@@ -308,7 +296,7 @@ module.exports = function (grunt) {
         'htmlhint',
         'jshint',
         'htmlmin:dist',
-        'ngtemplates:dist',
+        'ngtemplates',
         'copy:dist',
         'stylelint:sass',
         'sass:dist',
@@ -327,7 +315,7 @@ module.exports = function (grunt) {
         'htmlhint',
         'jshint',
         'htmlmin:dist',
-        'ngtemplates:dist',
+        'ngtemplates',
         'copy:dist',
         'stylelint:sass',
         'sass:dist',
@@ -347,7 +335,7 @@ module.exports = function (grunt) {
         'htmlhint',
         'jshint',
         'htmlmin:release',
-        'ngtemplates:release',
+        'ngtemplates',
         'copy:release',
         'stylelint:sass',
         'sass:dist',
