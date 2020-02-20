@@ -4,6 +4,6 @@
         .constant('basicData', {
             name: 'Cristian Cajiao Skarnic',
             title: 'Mi portafolio',
-            email: 'cristiancajiaos@gmail.com'
+            email: 'cristian.cajiao@alumnos.usm.cl'
         });
 })();
